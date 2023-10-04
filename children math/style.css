@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+}
+body {
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the NAV */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff6f3c;
+    margin-bottom: 5px;
+}
+.navbar h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+.list li {
+    list-style-type: none;
+    margin-left: 10px;
+    transition: 0.5s;
+    
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+li:hover {
+    outline: none;
+    border-bottom: 3px solid white;
+}
+
+/* main style */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 5px;
+    width: 95%;
+}
+.cal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    height: 500px;
+}
+.chose-num {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    row-gap: 5px;
+    flex-direction: column;
+    height: 500px;
+}
+
+.chose-num p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+.chose-num p:first-of-type {
+    background-color: #ff6f3c;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.chose-num p:first-of-type:hover {
+    background-color: white;
+    color: #ff6f3c;
+}
+
+.chose-num p:nth-child(2){
+    background-color: 	#87cefa;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.chose-num p:nth-child(2):hover {
+    background-color: white;
+    color: #87cefa;
+}
+.chose-num p:nth-child(3){
+    background-color:yellowgreen;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.chose-num p:nth-child(3):hover {
+    background-color: white;
+    color: yellowgreen;
+}
+
+.cal {
+    font-size: 100px;
+}
+.cal p {
+    margin-left: 20px;
+}
+.cal p:first-child {
+    color: #ff6f3c;
+}
+
+.cal p:nth-child(3) {
+    color: #87cefa;
+}
+.cal p:nth-child(4) {
+    color: yellowgreen;
+}
